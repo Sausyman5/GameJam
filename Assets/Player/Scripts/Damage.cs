@@ -40,13 +40,13 @@ public class Death : MonoBehaviour
                 // Reset the timer.
                 timer = 0f;
                 // Apply the damage.
-                TakeDamageFromPlayer(damage);
+                takedamagefromenemy(damage);
             }
         }
     }
 
     // This method handles the enemy's damage.
-    public void TakeDamageFromPlayer(int damage)
+    public void takedamagefromenemy(int damage)
     {
         // Reduce health by the damage amount.
         health -= damage;
@@ -97,7 +97,7 @@ public class Death : MonoBehaviour
             isColliding = true;
 
             // Apply the first damage when the player touches the enemy.
-            TakeDamageFromPlayer(damage);
+            takedamagefromenemy(damage);
 
             // Start the timer after applying the first damage.
             timer = 0; // Start the timer
