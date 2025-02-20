@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 1715106677}
   - component: {fileID: 1715106675}
   - component: {fileID: 1715106679}
+  - component: {fileID: 1715106680}
   m_Layer: 0
   m_Name: Square
   m_TagString: Enemy
@@ -408,6 +409,20 @@ MonoBehaviour:
   timeBetweenDamage: 0.5
   player: {fileID: 1978577192}
   deathSound: {fileID: 8300000, guid: d81da389b7266da4f95c35783b0cb49c, type: 3}
+--- !u!114 &1715106680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715106674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6ce278bbab9a745be845ad8b5d67d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  destructionDelay: 1
 --- !u!1 &1978577192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6439660896706948015, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
@@ -421,6 +436,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: spawnDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: projectileSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 2761303848048115788, guid: ca7f08d5711a5b743b9075d4a69d8d48, type: 3}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: offScreenDestroyDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: projectilePrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: 'projectilePrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2207290434238809005, guid: 02e8665bb542d7c4db5c1ef36c8195aa, type: 3}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: 'projectilePrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5768172631734046949, guid: f660969f8532a694ba92cbaf6b85cf58, type: 3}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: 'projectilePrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2761303848048115788, guid: ca7f08d5711a5b743b9075d4a69d8d48, type: 3}
+    - target: {fileID: 759261693322845206, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
+      propertyPath: 'projectilePrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8532895343914616642, guid: 7f9802453b0ed334c9747c0d9f51f5fe, type: 3}
     - target: {fileID: 6439660896706948015, guid: 1edac614d1d6ce34fad060222b9f0b5a, type: 3}
       propertyPath: m_Name
       value: Player
